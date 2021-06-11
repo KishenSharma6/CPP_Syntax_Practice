@@ -1,20 +1,27 @@
 #include <iostream>
 using namespace std;
 
+int firstNumber= 0;
+int secondNumber=0;
+int product=0;
+
+void calculation(){
+    cout << "Input first number:" << endl;
+    cin >> firstNumber;
+
+    cout << "Input second number:" << endl;
+    cin >> secondNumber;
+
+    product= firstNumber * secondNumber;
+
+
+}
 int main(){
     cout << "Hey there! This is a really simple calculator for me to start learning about C++ syntax! Try not to be too judgy ;)" << endl;
     
-    cout << "Enter first number" << endl;
-    int number1= 0;
-    cin >>number1;
+    calculation();
 
-    cout << "Enter second number" << endl;
-    int number2= 0;
-    cin >> number2;
-
-    int product= number1 * number2;
-
-    cout << "Let's hope this works!" << number1 << "X" << number2;
+    cout << "Let's hope this works!\n" << firstNumber << "X" << secondNumber;
     cout << "=" << product << endl;
 
     return 0;
