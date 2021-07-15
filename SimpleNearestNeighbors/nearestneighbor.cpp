@@ -7,7 +7,7 @@ using namespace mlpack::neighbor;
 using namespace mlpack::metric;
 
 
-void mlModel () {
+int main () {
     //Load data
     arma::mat data;
     data::Load("data.csv", data, true);
@@ -16,8 +16,17 @@ void mlModel () {
     NeighborSearch<NearestNeighborSort, ManhattanDistance> nn(data);
 
     //Init neightbors to store nearest neighbors
+    arma::Mat<size_t> neighbors;
+    
+    //Init distances object to store distances
+    arma::mat distances;
 
-    nn.Search
-    // https://www.mlpack.org/doc/stable/doxygen/sample.html
-
+    //Compute neighbors
+    nn.Search(1, neighbors, distances);
+    
+    for (size_t i = 0; i< neighbors.n_elen; ++i) {
+        std:cout << "Nearest neighbor of point " << i << " is point " << neighbors[i] <<
+        " and the distance is " <<distances[i] << ".\n";
+    }
+    return 0
 }
