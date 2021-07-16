@@ -3,3 +3,6 @@
 
 #Ignore Desktop Services Store file
 *.DS_Store
+
+#Cmake
+*CMakeFiles*
