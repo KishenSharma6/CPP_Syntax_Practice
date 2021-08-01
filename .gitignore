@@ -6,3 +6,6 @@
 
 #Cmake
 *CMakeFiles*
+
+#cpp properties file
+c_cpp_properties.json
