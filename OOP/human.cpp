@@ -27,9 +27,14 @@ int main() {
     person1.Company = "Google";
     person1.Age= 35;
 
-
-
+    Human person2;
+    person2.Name = "Michelle";
+    person2.Occupation= "Software Engineer";
+    person2.Company = "Apple";
+    person2.Age= 28;
 
     person1.IntroduceSelf();
+    person2.IntroduceSelf();
+    
     return 0;
 }
