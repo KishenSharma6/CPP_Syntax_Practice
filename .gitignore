@@ -1,14 +1,3 @@
-#Ignore execuables
-*.out
-
-#Ignore Desktop Services Store file
-*.DS_Store
-
-#Cmake
-*CMakeFiles*
-
-#cpp properties file
-c_cpp_properties.json
-
-#settings
-settings.json
+#Ignore all files that are not cpp
+*
+!*.cpp
