@@ -1,5 +1,5 @@
 #Ignore execuables
-*a.out
+*.out
 
 #Ignore Desktop Services Store file
 *.DS_Store
