@@ -1,3 +1,8 @@
-#Ignore all files that are not cpp
-*
-!*.cpp
+#Ignore json
+*.json
+
+#Ignore cpp output files
+*.out
+
+#Ignore CMAKE
+*cmake*
