@@ -1,8 +1,13 @@
 #Ignore json
 *.json
+cooking
+youtube
 
 #Ignore cpp output files
 *.out
 
 #Ignore CMAKE
 *cmake*
+
+#Misc
+*.DS_store
