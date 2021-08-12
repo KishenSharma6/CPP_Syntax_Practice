@@ -37,11 +37,10 @@ public:
 
      }
 };
-class Xmen:private Human{
-    public:
-    Xmen(string name, string job, int salary, int savings):Human(name, job, salary, savings){
-
-    }
+class Xmen:public Human{
+public:
+    Xmen(string name, string job, int salary, int savings):Human(name, job, salary, savings){};
+    
 
 };    
 
@@ -59,6 +58,8 @@ int main(){
     person2.share_salary();
     // give person 1 a raise
 
+    Xmen wolverine("Logan", "Hard Carry", 0, 0);
+    wolverine.introduce_self();
     
 
     return 0;
