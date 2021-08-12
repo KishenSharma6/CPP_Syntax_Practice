@@ -2,7 +2,7 @@
 *.json
 cooking
 youtube
-
+humanity
 #Ignore cpp output files
 *.out
 
