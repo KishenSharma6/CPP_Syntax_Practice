@@ -4,31 +4,62 @@ using namespace std;
 
 class Human {
 private:
-    int salary;
-    int current_assets;
+    int Salary;
+    int Current_assets;
 
 public:
-    string name;
-    string occupation;
+    string Name;
+    string Occupation;
 
     void introduce_self() {
-        cout << "Hi there, my name is " << name << " and I am a "<< occupation << endl;
-     }
-    
-    void get_salary() {
-        if(salary > 100000){
-            salary -= 20000; //lie about income
-            cout << "I make a modest salary of $" << salary << endl;
+        cout << "Hi there, my name is " << Name << " and I am a "<< Occupation << endl;
+     }   
+    void share_salary() {
+        if(Salary > 100000){
+            Salary -= 20000; //lie about income
+            cout << "I make a modest salary of $" << Salary << endl;
         }
         else{ 
-            cout << "I make a salary of $" << salary << endl;
+            cout << "I make a salary of $" << Salary << endl;
         }
+    }
+    void annual_raise(float percent_raise) {
+        Salary += (Salary * percent_raise);
+        cout << "I received a " << percent_raise * 100 << "% raise"<<endl;
+        cout << "My new salary is $" << Salary << endl;
+    }
     
+    Human(string name, string job, int salary, int savings){
+         Name= name;
+         Occupation= job;
+         Salary = salary;
+         Current_assets= savings;
 
-
+     }
 };
+class Xmen:private Human{
+    public:
+    Xmen(string name, string job, int salary, int savings):Human(name, job, salary, savings){
 
-int main() {
+    }
+
+};    
+
+
+
+int main(){
+    Human person1("Henry", "Mechanical Engineer", 50000, 150000);
+    Human person2("David", "SWE", 120000, 10000000);
+    
+    person1.introduce_self();
+    person1.share_salary();
+    person1.annual_raise(2.00);
+    person1.share_salary();
+    person2.introduce_self();
+    person2.share_salary();
+    // give person 1 a raise
+
+    
 
     return 0;
 }
