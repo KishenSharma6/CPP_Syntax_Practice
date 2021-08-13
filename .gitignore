@@ -1,8 +1,12 @@
 #Ignore json
 *.json
+
+#Ignore executables
 cooking
 youtube
 humanity
+overloading
+
 #Ignore cpp output files
 *.out
 
