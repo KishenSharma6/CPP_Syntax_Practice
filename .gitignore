@@ -3,13 +3,14 @@
 
 #Ignore local files
 *.vscode/*
-*.dSYM/*
+*/*.dSYM/*
 
 #Ignore executables
 cooking
 youtube
 humanity
 overloading
+helloworld
 
 #Ignore cpp output files
 *.out
