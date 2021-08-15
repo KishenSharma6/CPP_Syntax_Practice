@@ -1,6 +1,10 @@
 #Ignore json
 *.json
 
+#Ignore local files
+*.vscode/*
+*.dSYM/*
+
 #Ignore executables
 cooking
 youtube
