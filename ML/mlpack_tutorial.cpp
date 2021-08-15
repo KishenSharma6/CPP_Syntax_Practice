@@ -11,6 +11,7 @@ int max_iter = 10;//maximum number of iterations
 
 
 int main() {
+    cout << "Code compiled!"<<endl;
     return 0;
 }
 
