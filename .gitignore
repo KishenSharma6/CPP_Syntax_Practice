@@ -11,12 +11,20 @@ youtube
 humanity
 overloading
 helloworld
+simple_program
 
 #Ignore cpp output files
 *.out
 
 #Ignore CMAKE
-*cmake*
+*.cmake
+*.txt
+*.log
+CMakeC*
+CMakeD*
+*CMakeFiles*
+*.make
+
 
 #Misc
 *.DS_store
