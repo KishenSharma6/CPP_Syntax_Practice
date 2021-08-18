@@ -24,7 +24,7 @@ CMakeC*
 CMakeD*
 *CMakeFiles*
 *.make
-
+*Makefile*
 
 #Misc
 *.DS_store
