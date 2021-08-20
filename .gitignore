@@ -55,3 +55,12 @@ _deps
 #all build
 out/build/
 [Bb][Uu][Ii][Ll][Dd]/
+
+#MISC
+*.plist
+helloworld
+youtube
+cooking
+humanity
+overloading
+*Makefile*
