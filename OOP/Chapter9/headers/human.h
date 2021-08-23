@@ -23,5 +23,7 @@ public:
     Human(){
         cout << "Human object created, don't forget to add attributes" << endl;
     }
-
+    ~Human(){
+        cout << "Object destroyed" << endl;
+    }; // Destructor
 };
